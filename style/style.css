@@ -1,0 +1,345 @@
+/*font*/
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Microsoft JhengHei";
+  font-size: 16px;
+  line-height: 28px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*body*/
+body {
+  position: relative;
+}
+body img {
+  max-width: 100%;
+}
+body header {
+  background-color: black;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  z-index: 1000;
+}
+body div.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+body .nav {
+  display: flex;
+}
+body .nav ul {
+  list-style: none;
+  display: flex;
+}
+body .nav ul li {
+  margin: 0 20px;
+}
+body .nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+body main {
+  margin-top: 76px;
+}
+body main div.container {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+body main div.flex1 {
+  justify-content: space-between;
+  align-items: center;
+}
+body main div.flex2 {
+  justify-content: center;
+  align-items: flex-start;
+}
+body main section.resume {
+  background-color: white;
+  padding: 5rem 0;
+}
+body main section.resume div.info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+body main section.resume div.info h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+}
+body main section.resume div.info h2 span {
+  font-weight: 700;
+  font-size: 40px;
+}
+body main section.resume div.info h3 {
+  font-family: "Allura", cursive;
+  font-size: 30px;
+  color: #9c9c9c;
+  padding: 1.5rem 0;
+}
+body main section.resume div.info h4 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0 0.5rem 0;
+}
+body main section.resume div.info h4 i {
+  margin-left: 5px;
+}
+body main section.resume div.info p {
+  text-align: center;
+  font-size: 14px;
+}
+body main section.resume div.work {
+  width: 50%;
+}
+body main section.resume div.work ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body main section.resume div.work ul li {
+  list-style: none;
+  padding-bottom: 3rem;
+}
+body main section.resume div.work ul li:last-child {
+  padding-bottom: 0;
+}
+body main section.resume div.work ul li h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  padding-bottom: 0.5rem;
+}
+body main section.resume div.work ul li h3 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+body main section.resume div.work ul li h3 span {
+  font-family: "Arial";
+  font-size: 15px;
+  color: #9c9c9c;
+  padding-right: 0.5rem;
+}
+body main section.resume div.work ul li h4 {
+  font-family: "Noto Sans TC";
+  font-size: 15px;
+}
+body main section.resume div.work ul li p {
+  font-size: 14px;
+}
+body main section.web-design {
+  background: black;
+  padding: 5rem 0;
+}
+body main section.web-design ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body main section.web-design ul li {
+  width: 48%;
+  margin: 30px 0;
+}
+body main section.web-design div.web-box {
+  background-color: white;
+  padding: 1.5rem;
+  margin-top: -8px;
+}
+body main section.web-design div.web-box div.w-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+body main section.web-design div.web-box div.w-title h2 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+body main section.web-design div.web-box div.w-title p {
+  font-size: 15px;
+  color: #9c9c9c;
+}
+body main section.project {
+  background-color: white;
+  padding: 5rem 0;
+}
+body main section.project img:first-child {
+  padding-bottom: 2rem;
+}
+body main section.graphic01 {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+body main section.graphic01 img {
+  width: 50%;
+  max-width: 1000px;
+}
+body main section.graphic01 div.g-box {
+  width: 50%;
+  max-width: 600px;
+  margin-left: 70px;
+}
+body main section.graphic01 div.g-box h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #9c9c9c;
+}
+body main section.graphic01 div.g-box h3 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+}
+body main section.graphic01 div.g-box p {
+  padding: 1rem 0;
+}
+body main section.graphic01 div.g-box ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  align-items: center;
+}
+body main section.graphic01 div.g-box ul li {
+  width: 15%;
+  list-style: none;
+}
+body main section.graphic01 div.g-box ul li img {
+  padding-right: 1rem;
+}
+body main section.graphic01 div.g-box ul li:nth-child(2) div.color {
+  width: 42px;
+  height: 42px;
+  background-color: rgb(96, 83, 66);
+}
+body main section.graphic01 div.g-box ul li:nth-child(3) div.color {
+  width: 42px;
+  height: 42px;
+  background-color: rgb(117, 103, 82);
+}
+body main section.graphic01 div.g-box ul li:nth-child(4) div.color {
+  width: 42px;
+  height: 42px;
+  background-color: rgb(155, 137, 112);
+}
+body main section.graphic01 div.g-box ul li:nth-child(5) div.color {
+  width: 42px;
+  height: 42px;
+  background-color: rgb(175, 155, 132);
+}
+body main section.graphic01 div.g-box ul li p {
+  font-size: 10px;
+  color: #666;
+  padding: 0;
+}
+body main section.graphic01 div.g-box img {
+  width: 70%;
+}
+body main section.graphic02 {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+body main section.graphic02 img {
+  width: 50%;
+  max-width: 1000px;
+}
+body main section.graphic02 div.p-box {
+  width: 50%;
+  max-width: 600px;
+  margin-right: 70px;
+}
+body main section.graphic02 div.p-box h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #9c9c9c;
+}
+body main section.graphic02 div.p-box h3 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+}
+body main section.graphic02 div.p-box p {
+  padding: 1rem 0;
+}
+body main section.graphic02 div.p-box img {
+  width: 100%;
+  padding-top: 2rem;
+}
+body .toTop-arrow {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #8c8c8c;
+  cursor: pointer;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+}
+body .toTop-arrow::before {
+  transform: rotate(-45deg) translate(0, -50%);
+  top: 1.2rem;
+  left: 0.5rem;
+  width: 16px;
+  height: 3px;
+  border-radius: 3px;
+  background: white;
+  position: absolute;
+  content: "";
+}
+body .toTop-arrow::after {
+  transform: rotate(45deg) translate(0, -50%);
+  top: 1.2rem;
+  right: 0.5rem;
+  width: 16px;
+  height: 3px;
+  border-radius: 3px;
+  background: white;
+  position: absolute;
+  content: "";
+}
+body .toTop-arrow:focus {
+  outline: none;
+}/*# sourceMappingURL=style.css.map */
