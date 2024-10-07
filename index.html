@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="2024 作品集 (平面設計與網頁設計)" />
+    <meta property="og:image" content="https://i.imgur.com/T6y9Tqe.png" />
     <title>2024 Portfolio</title>
     <link
       rel="stylesheet"
@@ -11,7 +13,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" href="./images/favicon.ico" />
   </head>
   <body>
     <header>
@@ -25,23 +29,19 @@
       </nav>
     </header>
     <main>
-      <section class="resume">
-        <div class="container flex2">
-          <div class="info" id="about">
+      <section class="resume" id="about">
+        <div class="container flex1">
+          <div class="info" data-aos="fade-right">
             <h2>ABOUT <span>ME</span></h2>
             <h3>Winnine Chang</h3>
             <img src="./images/resume01.png" alt="" />
-            <h4>
-              張芸綺<a href="https://github.com/ycc077"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </h4>
+            <h4>張芸綺</h4>
             <p>
               1995.07.15<br />
               winnie233235@gmail.com
             </p>
           </div>
-          <div class="work">
+          <div class="work" data-aos="fade-left">
             <ul>
               <li>
                 <h2>
@@ -61,7 +61,7 @@
                 <h3>
                   <span>2017.12 ~ 2018.06</span>赫里龍國際貿易有限公司 設計助理
                 </h3>
-                <h4>負責公司產品及社群平面設計 ， 與行銷企劃配合執行專案</h4>
+                <h4>負責公司產品及社群平面設計，與行銷企劃配合執行專案</h4>
                 <p>
                   商品形象規劃與設計 / 視覺設計 / 包裝設計 / 印刷物設計 /
                   短片拍攝與剪輯
@@ -90,79 +90,88 @@
           </div>
         </div>
       </section>
-      <section class="web-design">
-        <div class="container flex1">
-          <ul>
+      <section class="web-design" id="web">
+        <div class="container flex2">
+          <ul data-aos="fade-up">
             <li>
               <img src="./images/web01.png" alt="" />
-              <div class="web-box" id="web">
+              <div class="web-box">
                 <div class="w-title">
-                  <h2>
-                    <a href="./project1.html"
-                      ><i class="fa-solid fa-link" style="color: #74c0fc"></i
-                    ></a>
-                    泰餃情泰式料理
-                  </h2>
+                  <a href="./project1.html">
+                    <h2>
+                      <i class="fa-solid fa-link" style="color: #74c0fc"></i>
+                      泰餃情泰式料理
+                    </h2>
+                  </a>
+
                   <p>#響應式網站設計 #購物網站設計</p>
                 </div>
 
-                <p>以LOGO配色為網站整體色系，版面豐富，清楚呈現產品特色。</p>
+                <p>
+                  客戶需求：以LOGO配色為網站整體色系，版面豐富，清楚呈現產品特色。
+                </p>
               </div>
             </li>
             <li>
               <img src="./images/web02.png" alt="" />
               <div class="web-box">
                 <div class="w-title">
-                  <h2>
-                    <a href="./project2.html"
-                      ><i class="fa-solid fa-link" style="color: #74c0fc"></i
-                    ></a>
-                    星達塗料
-                  </h2>
+                  <a href="./project2.html">
+                    <h2>
+                      <i class="fa-solid fa-link" style="color: #74c0fc"></i>
+                      星達塗料
+                    </h2></a
+                  >
                   <p>#響應式網站設計 #形象網站設計</p>
                 </div>
 
-                <p>以黑色為整體網站色系，版面簡約、整齊，呈現品牌專業形象。</p>
+                <p>
+                  客戶需求：以黑色為整體網站色系，版面簡約、整齊，呈現品牌專業形象。
+                </p>
               </div>
             </li>
             <li>
               <img src="./images/web03.png" alt="" />
               <div class="web-box">
                 <div class="w-title">
-                  <h2>
-                    <a href="./project3.html"
-                      ><i class="fa-solid fa-link" style="color: #74c0fc"></i
-                    ></a>
-                    初露蓮霧
-                  </h2>
+                  <a href="./project3.html">
+                    <h2>
+                      <i class="fa-solid fa-link" style="color: #74c0fc"></i>
+                      初露蓮霧
+                    </h2></a
+                  >
                   <p>#響應式網站設計 #形象網站設計</p>
                 </div>
 
-                <p>以禮盒配色為整體色系，跳脫農產品既定印象，打造精緻風格。</p>
+                <p>
+                  客戶需求：以禮盒配色為整體色系，跳脫農產品既定印象，打造精緻風格。
+                </p>
               </div>
             </li>
             <li>
-              <img src="./images/web03.png" alt="" />
+              <img src="./images/web04.png" alt="" />
               <div class="web-box">
                 <div class="w-title">
-                  <h2>
-                    <a href="https://perfume-website-demo.netlify.app/"
-                      ><i class="fa-solid fa-link" style="color: #74c0fc"></i
-                    ></a>
-                    Perfume 香水
-                  </h2>
-                  <p>#響應式網站設計 #形象網站設計</p>
+                  <a href="https://perfume-website-demo.netlify.app/">
+                    <h2>
+                      <i class="fa-solid fa-link" style="color: #74c0fc"></i>
+                      Perfume (DEMO)
+                    </h2></a
+                  >
+                  <p>#響應式網站設計 #自行設計切版</p>
                 </div>
 
-                <p>網站製作實例，包含設計與切版。</p>
+                <p>
+                  實例製作：以黑白為整體網站色系，版面簡約時尚，呈現香水質感風格。
+                </p>
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="graphic01">
+      <section class="graphic01" id="graphic">
         <img src="./images/graphic01.png" alt="" />
-        <div class="g-box" id="graphic">
+        <div class="g-box" data-aos="fade-right">
           <h2>LOGO DESIGN</h2>
           <h3>品牌標誌設計</h3>
           <p>以金色為整體色系，將名稱開頭的M、Y兩字搭配立體感方塊設計。</p>
@@ -192,7 +201,7 @@
       </section>
       <section class="graphic02">
         <img src="./images/graphic03.png" alt="" />
-        <div class="p-box">
+        <div class="p-box" data-aos="fade-left">
           <h2>LAYOUT DESIGN</h2>
           <h3>品牌產品視覺設計</h3>
           <p>商品形象規劃與設計、視覺設計、包裝設計、印刷物設計</p>
@@ -200,6 +209,24 @@
         </div>
       </section>
     </main>
+    <footer>
+      <section class="links">
+        <h2>Winnie Chang</h2>
+        <ul>
+          <li>
+            <a href="mailto:winnie233235@gmail.com"
+              ><i class="fa-solid fa-envelope fa-xl" style="color: #ffffff"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/ycc077"
+              ><i class="fa-brands fa-github fa-xl" style="color: #ffffff"></i
+            ></a>
+          </li>
+        </ul>
+      </section>
+      <p>Designed by 77 Copyright © 2024 YKQK, Mr.Smart.</p>
+    </footer>
     <!--totop-->
     <button type="button" id="BackTop" class="toTop-arrow"></button>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -221,5 +248,12 @@
     </script>
     <!--menu-->
     <script src="./menu.js"></script>
+    <!--fade-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+    </script>
   </body>
 </html>

@@ -60,11 +60,12 @@ body .nav ul li {
 body .nav ul li a {
   color: white;
   text-decoration: none;
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 15px;
 }
 body main {
+  overflow-x: hidden;
   margin-top: 76px;
 }
 body main div.container {
@@ -74,23 +75,23 @@ body main div.container {
   margin: 0 auto;
 }
 body main div.flex1 {
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 5rem 0 3rem 0;
+}
+body main div.flex2 {
   justify-content: space-between;
   align-items: center;
 }
-body main div.flex2 {
-  justify-content: center;
-  align-items: flex-start;
-}
 body main section.resume {
   background-color: white;
-  padding: 5rem 0;
 }
 body main section.resume div.info {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  padding-bottom: 2rem;
 }
 body main section.resume div.info h2 {
   font-family: "Montserrat", sans-serif;
@@ -123,7 +124,7 @@ body main section.resume div.info p {
   font-size: 14px;
 }
 body main section.resume div.work {
-  width: 50%;
+  padding-bottom: 2rem;
 }
 body main section.resume div.work ul {
   display: flex;
@@ -148,6 +149,8 @@ body main section.resume div.work ul li h3 {
   font-family: "Noto Sans TC", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
 }
 body main section.resume div.work ul li h3 span {
   font-family: "Arial";
@@ -178,21 +181,23 @@ body main section.web-design ul li {
 body main section.web-design div.web-box {
   background-color: white;
   padding: 1.5rem;
-  margin-top: -8px;
+  margin-top: -10px;
 }
 body main section.web-design div.web-box div.w-title {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   padding-bottom: 1rem;
 }
 body main section.web-design div.web-box div.w-title h2 {
   font-family: "Noto Sans TC", sans-serif;
   font-size: 20px;
   font-weight: 500;
+  color: black;
 }
 body main section.web-design div.web-box div.w-title p {
-  font-size: 15px;
+  font-size: 14px;
   color: #9c9c9c;
 }
 body main section.project {
@@ -233,15 +238,19 @@ body main section.graphic01 div.g-box p {
 body main section.graphic01 div.g-box ul {
   display: flex;
   flex-wrap: wrap;
-  padding: 2rem 0;
-  align-items: center;
+  padding: 1rem 0;
+  align-items: flex-start;
 }
 body main section.graphic01 div.g-box ul li {
-  width: 15%;
+  width: 12%;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 body main section.graphic01 div.g-box ul li img {
   padding-right: 1rem;
+  width: 100%;
 }
 body main section.graphic01 div.g-box ul li:nth-child(2) div.color {
   width: 42px;
@@ -304,6 +313,45 @@ body main section.graphic02 div.p-box img {
   width: 100%;
   padding-top: 2rem;
 }
+body footer {
+  display: flex;
+  padding-top: 2rem;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: black;
+}
+body footer section.links {
+  max-width: 1300px;
+  margin: auto;
+}
+body footer section.links ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+body footer section.links ul li {
+  list-style: none;
+}
+body footer section.links ul li a {
+  margin: 0 15px;
+  text-decoration: none;
+}
+body footer section.links h2 {
+  font-family: "Allura", cursive;
+  font-size: 30px;
+}
+body footer p {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  line-height: 40px;
+  font-size: 12px;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
 body .toTop-arrow {
   width: 2.5rem;
   height: 2.5rem;
@@ -342,4 +390,119 @@ body .toTop-arrow::after {
 }
 body .toTop-arrow:focus {
   outline: none;
+}
+
+@media screen and (max-width: 1400px) {
+  body main div.flex2 {
+    padding: 0 3rem;
+  }
+  body main section.graphic01 {
+    padding: 4rem 0;
+  }
+  body main section.graphic01 div.g-box {
+    max-width: 400px;
+    margin-left: 40px;
+  }
+  body main section.graphic02 {
+    padding: 0 0 5rem 0;
+  }
+  body main section.graphic02 div.p-box {
+    max-width: 400px;
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  body main div.flex1 {
+    padding: 5rem 3rem 3rem 3rem;
+  }
+  body main section.graphic01 {
+    flex-direction: column;
+    padding-top: 5rem;
+  }
+  body main section.graphic01 div.g-box {
+    margin: 30px 0;
+    text-align: center;
+  }
+  body main section.graphic01 div.g-box ul {
+    justify-content: center;
+  }
+  body main section.graphic02 {
+    flex-direction: column;
+    padding-bottom: 3rem;
+  }
+  body main section.graphic02 div.p-box {
+    margin: 30px 0;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  body header {
+    justify-content: flex-end;
+  }
+  body div.menu-toggle {
+    display: block;
+  }
+  body .nav {
+    display: none;
+    width: 100%;
+    background-color: #eee;
+    position: absolute;
+    top: 75px;
+    left: 0;
+  }
+  body .nav.active {
+    display: block;
+  }
+  body .nav ul {
+    flex-direction: column;
+  }
+  body .nav ul li {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid white;
+  }
+  body .nav ul li:last-child {
+    border-bottom: none;
+  }
+  body .nav ul li a {
+    color: #666;
+  }
+  body main div.flex1 {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  body main section.resume div.info {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  body main section.resume div.work h2 {
+    flex-direction: column;
+  }
+  body main section.web-design ul li {
+    width: 100%;
+  }
+  body main section.graphic01 {
+    padding: 5rem 3rem 0 3rem;
+  }
+  body main section.graphic01 img {
+    width: 100%;
+  }
+  body main section.graphic01 div.g-box {
+    width: 100%;
+  }
+  body main section.graphic01 div.g-box ul {
+    justify-content: space-between;
+  }
+  body main section.graphic01 div.g-box ul li {
+    width: 20%;
+  }
+  body main section.graphic02 {
+    padding: 3rem;
+  }
+  body main section.graphic02 img,
+  body main section.graphic02 div.p-box {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
