@@ -164,6 +164,7 @@ body main section.resume div.work ul li h4 {
 }
 body main section.resume div.work ul li p {
   font-size: 14px;
+  color: #6c6c6c;
 }
 body main section.web-design {
   background: black;
@@ -477,7 +478,7 @@ body .toTop-arrow:focus {
   }
 }
 @media screen and (max-width: 500px) {
-  body main section.resume div.work h2 {
+  body main section.resume div.work h3 {
     flex-direction: column;
   }
   body main section.web-design ul li {

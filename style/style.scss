@@ -165,6 +165,7 @@ body {
             }
             p {
               font-size: 14px;
+              color: #6c6c6c;
             }
           }
         }
@@ -530,7 +531,7 @@ body {
     main {
       section.resume {
         div.work {
-          h2 {
+          h3 {
             flex-direction: column;
           }
         }
