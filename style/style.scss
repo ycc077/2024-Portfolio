@@ -8,6 +8,7 @@
   font-family: "Microsoft JhengHei";
   font-size: 16px;
   line-height: 28px;
+  list-style: none;
 }
 
 h1,
@@ -60,7 +61,6 @@ body {
         margin: 0 20px;
         a {
           color: white;
-          text-decoration: none;
           font-family: "Montserrat", sans-serif;
           font-weight: 300;
           font-size: 15px;
@@ -135,7 +135,6 @@ body {
           flex-direction: column;
           justify-content: space-between;
           li {
-            list-style: none;
             padding-bottom: 3rem;
             &:last-child {
               padding-bottom: 0;
@@ -235,34 +234,27 @@ body {
         width: 50%;
         max-width: 600px;
         margin-left: 70px;
-
         h2 {
-          font-family: "Montserrat", sans-serif;
-          font-size: 14px;
-          color: #9c9c9c;
-        }
-        h3 {
           font-family: "Noto Sans TC", sans-serif;
           font-size: 22px;
           font-weight: 500;
         }
-        h4 {
-          font-size: 10px;
-          color: #eee;
+        p {
+          padding: 1rem 0;
         }
         ul {
           display: flex;
           flex-wrap: wrap;
-          padding: 2rem 0;
+          padding: 1rem 0 2rem 0;
           align-items: flex-start;
           li {
             width: 12%;
-            list-style: none;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             p {
               font-size: 10px;
+              padding: 0;
             }
             img {
               padding-right: 1rem;
@@ -317,13 +309,7 @@ body {
         width: 50%;
         max-width: 600px;
         margin-right: 70px;
-
         h2 {
-          font-family: "Montserrat", sans-serif;
-          font-size: 14px;
-          color: #9c9c9c;
-        }
-        h3 {
           font-family: "Noto Sans TC", sans-serif;
           font-size: 22px;
           font-weight: 500;
@@ -335,6 +321,33 @@ body {
         img {
           width: 100%;
           padding-top: 2rem;
+        }
+      }
+    }
+    section.graphic03 {
+      background-color: #ededed;
+      padding: 3rem 0 5rem 0;
+      div.flex3 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+      }
+      h2 {
+        font-family: "Noto Sans TC", sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+      }
+      p {
+        padding: 1rem 0;
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 2rem;
+        li {
+          width: 32%;
         }
       }
     }
@@ -357,10 +370,8 @@ body {
         justify-content: center;
         margin-top: 1rem;
         li {
-          list-style: none;
           a {
             margin: 0 15px;
-            text-decoration: none;
           }
         }
       }
@@ -427,7 +438,8 @@ body {
 @media screen and (max-width: 1400px) {
   body {
     main {
-      div.flex2 {
+      div.flex2,
+      div.flex3 {
         padding: 0 3rem;
       }
       section.graphic01 {
@@ -567,6 +579,17 @@ body {
         img,
         div.p-box {
           width: 100%;
+        }
+      }
+      section.graphic03 {
+        ul {
+          li {
+            width: 100%;
+            padding-bottom: 1rem;
+            &:last-child {
+              padding-bottom: 0;
+            }
+          }
         }
       }
     }

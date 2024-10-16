@@ -7,6 +7,7 @@
   font-family: "Microsoft JhengHei";
   font-size: 16px;
   line-height: 28px;
+  list-style: none;
 }
 
 h1,
@@ -59,7 +60,6 @@ body .nav ul li {
 }
 body .nav ul li a {
   color: white;
-  text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -133,7 +133,6 @@ body main section.resume div.work ul {
   justify-content: space-between;
 }
 body main section.resume div.work ul li {
-  list-style: none;
   padding-bottom: 3rem;
 }
 body main section.resume div.work ul li:last-child {
@@ -230,34 +229,28 @@ body main section.graphic01 div.g-box {
   margin-left: 70px;
 }
 body main section.graphic01 div.g-box h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  color: #9c9c9c;
-}
-body main section.graphic01 div.g-box h3 {
   font-family: "Noto Sans TC", sans-serif;
   font-size: 22px;
   font-weight: 500;
 }
-body main section.graphic01 div.g-box h4 {
-  font-size: 10px;
-  color: #eee;
+body main section.graphic01 div.g-box p {
+  padding: 1rem 0;
 }
 body main section.graphic01 div.g-box ul {
   display: flex;
   flex-wrap: wrap;
-  padding: 2rem 0;
+  padding: 1rem 0 2rem 0;
   align-items: flex-start;
 }
 body main section.graphic01 div.g-box ul li {
   width: 12%;
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 body main section.graphic01 div.g-box ul li p {
   font-size: 10px;
+  padding: 0;
 }
 body main section.graphic01 div.g-box ul li img {
   padding-right: 1rem;
@@ -303,11 +296,6 @@ body main section.graphic02 div.p-box {
   margin-right: 70px;
 }
 body main section.graphic02 div.p-box h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  color: #9c9c9c;
-}
-body main section.graphic02 div.p-box h3 {
   font-family: "Noto Sans TC", sans-serif;
   font-size: 22px;
   font-weight: 500;
@@ -318,6 +306,33 @@ body main section.graphic02 div.p-box p {
 body main section.graphic02 div.p-box img {
   width: 100%;
   padding-top: 2rem;
+}
+body main section.graphic03 {
+  background-color: #ededed;
+  padding: 3rem 0 5rem 0;
+}
+body main section.graphic03 div.flex3 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+body main section.graphic03 h2 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+}
+body main section.graphic03 p {
+  padding: 1rem 0;
+}
+body main section.graphic03 ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+body main section.graphic03 ul li {
+  width: 32%;
 }
 body footer {
   display: flex;
@@ -337,12 +352,8 @@ body footer section.links ul {
   justify-content: center;
   margin-top: 1rem;
 }
-body footer section.links ul li {
-  list-style: none;
-}
 body footer section.links ul li a {
   margin: 0 15px;
-  text-decoration: none;
 }
 body footer section.links h2 {
   font-family: "Allura", cursive;
@@ -399,7 +410,8 @@ body .toTop-arrow:focus {
 }
 
 @media screen and (max-width: 1400px) {
-  body main div.flex2 {
+  body main div.flex2,
+  body main div.flex3 {
     padding: 0 3rem;
   }
   body main section.graphic01 {
@@ -510,5 +522,12 @@ body .toTop-arrow:focus {
   body main section.graphic02 img,
   body main section.graphic02 div.p-box {
     width: 100%;
+  }
+  body main section.graphic03 ul li {
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+  body main section.graphic03 ul li:last-child {
+    padding-bottom: 0;
   }
 }/*# sourceMappingURL=style.css.map */
